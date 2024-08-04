@@ -66,5 +66,9 @@ Technologies used in the project:
 
 *   Ejs
 *   CSS
+*   JavaScript 
 *   Express
 *   MongoDb
+
+
+<p>P.S- I will try to add new features and improve visuals whenever I will get time.</p>
