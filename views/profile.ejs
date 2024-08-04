@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog App</title>
+    <link rel="stylesheet" href="/styles/profileStyle.css" />
+</head>
+<body>
+    <div class="header">
+        <p class="greeting">Hello 👋 <%= user.userName %></p>
+        <a href="/feed" class="feed-link">📰 Feed</a>
+        <a href="/logout" class="logout-button">Logout</a>
+    </div>
+    <form method="post" action="/post" class="post-form">
+        <textarea name="content" class="post-input" placeholder="What's on your mind ❔"></textarea>
+        <input type="submit" value=" ➕ Create new Post" class="submit-button">
+    </form>
+    <div class="posts">
+        <h1>Your posts</h1>
+        <div class="postcontainer">
+            <% user.posts.reverse().forEach(function(post){ %>
+                <div class="post">
+                    <p class="username">@<%= user.userName %></p>
+                    <p><%= post.content %></p> 
+                    <div class="btns">
+                        <p class="like-count">
+                            <span class="like-number"><%= post.likes.length %></span>
+                            <span class="like-text"> likes</span>
+                        </p>
+                        <a href="/like/<%= post._id %>" class="like-button">
+                            <%= post.likes.indexOf(user._id) === -1 ? "♡" : "❤" %>
+                        </a>
+                        <a href="/edit/<%= post._id %>" class="edit-button">✏️ Edit</a>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

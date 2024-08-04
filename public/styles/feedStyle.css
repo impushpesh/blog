@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.post-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 auto; 
+    box-sizing: border-box;
+}
+
+.username {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.post-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-count {
+    font-size: 16px; 
+}
+
+.like-number {
+    color: red; 
+    font-weight: bold;
+}
+
+.like-text {
+    color: black; 
+}
+
+.like-button {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.like-button:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}

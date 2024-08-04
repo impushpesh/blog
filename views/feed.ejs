@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Blogs</title>
+    <link rel="stylesheet" href="/styles/feedStyle.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>All Blogs</h1>
+        <div class="post-container">
+            <% posts.forEach(function(post) { %>
+            <div class="post-box">
+                <p class="username">@<%= post.user.userName %></p>
+                <p><%= post.content %></p>
+                <div class="post-footer">
+                    <p class="like-count">
+                        <span class="like-number"><%= post.likes.length %></span>
+                        <span class="like-text"> Likes</span>
+                    </p>
+                    <a href="/like-feed/<%= post._id %>" class="like-button">
+                        <%= post.likes.indexOf(user._id) === -1 ? "♡" : "❤" %>
+                    </a>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+        <a href="/profile" class="back-button">🔙 Profile</a>
+    </div>
+</body>
+</html>

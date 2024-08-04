@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.header .greeting {
+    font-size: 18px;
+}
+
+.header .logout-button {
+    color: #f4f4f4;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.header .logout-button:hover {
+    background-color: #0056b3;
+}
+
+.feed-link {
+    color: #f4f4f4;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feed-link:hover {
+    background-color: #0056b3;
+}
+
+.post-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.post-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.posts {
+    margin: 20px;
+}
+
+.postcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.post p {
+    margin: 5px 0;
+}
+
+.post .username {
+    color: #28a745; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.btns {
+    margin-top: 10px;
+}
+
+.like-count {
+    font-size: 16px;
+}
+
+.like-number {
+    color: red; 
+    font-weight: bold;
+}
+
+.like-text {
+    color: black; /* Black color for 'likes' */
+}
+
+.like-button {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.like-button:hover {
+    text-decoration: underline;
+}
+
+.edit-button {
+    color: #28a745;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.edit-button:hover {
+    text-decoration: underline;
+}
